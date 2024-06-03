@@ -5,7 +5,9 @@
 
 class KGraph {
  public:
+  KGraph();
   KGraph(TGraph* gr, int e);
+  void Init(TGraph* gr, int e);
 
   void x_shift(double o);
   void y_shift(double o);

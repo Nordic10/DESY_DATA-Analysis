@@ -4,7 +4,13 @@
 
 using namespace std;
 
+KGraph::KGraph(){;}
+
 KGraph::KGraph(TGraph *gr, int e) {
+  Init(gr,e);
+}
+
+void KGraph::Init(TGraph *gr, int e) {
   g = gr;
   n = gr->GetN();
   xvals = gr->GetX();
@@ -12,7 +18,6 @@ KGraph::KGraph(TGraph *gr, int e) {
   event = e;
 }
 
-  
 void KGraph::x_shift(double o) {
   TGraph* g1 = new TGraph();
   TGraph* g2 = new TGraph();
@@ -20,7 +25,8 @@ void KGraph::x_shift(double o) {
   for (int i=0; i<n; i++) {
     g1->SetPoint(i,xvals[i]+o,yvals[i]);
   }
-  
+
+
   for (int i=0; i<n; i++) {
     g2->SetPoint(i,i,g1->Eval(i));
   }
@@ -33,7 +39,6 @@ void KGraph::x_shift(double o) {
   
 }
   
-
 void KGraph::y_shift(double o) {
   TGraph* new_g = new TGraph();
   

@@ -1,0 +1,4 @@
+f = open("firstSix/ch0/event_0","r")
+for line in f:
+
+print(f.read())

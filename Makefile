@@ -22,7 +22,5 @@ plot_all: main.C
 	g++ -g -Wall -oplot_all main.C TreeReader.C KGraph.C RecoTRG.C $(ROOTFLAGS) $(GSLFLAGS)
 
 clean:
-	rm -f basic_plotter *.o *.so *.pcm *.d *~
-	rm -f extra_plotter *.o *.so *.pcm *.d *~
-	rm -f sum_plotter *.o *.so *.pcm *.d *~
+	rm -f plot_all *.o *.so *.pcm *.d *~
 
