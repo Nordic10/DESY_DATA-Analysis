@@ -41,8 +41,8 @@ for ch in range(8):
     for n in range(len(data[0])):
         string = ""
         for value in range(len(data)):
-            string = string + data[value][n] + ", "
-        f.write(string[0:-2] + "\n")
+            string = string + data[value][n] + ","
+        f.write(string[0:-1] + "\n")
     f.close()
         
         
