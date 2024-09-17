@@ -6,10 +6,6 @@
 #include "Rtypes.h"
 #include "TChain.h"
 
-/*
-unsigned int N_Channels = 2 * 10;
-unsigned int N_Samples = 1024;
- */
 
 constexpr unsigned int N_Channels = 2 * 10;
 constexpr unsigned int N_Samples = 1024;

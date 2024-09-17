@@ -6,7 +6,7 @@
 class RecoTRG {
   
  public:
-  RecoTRG(KGraph *gr);
+  RecoTRG(KGraph *gr, int event);
   double ped() { return ped_; }
   double rms() { return rms_; }
   double amp() { return amp_; }

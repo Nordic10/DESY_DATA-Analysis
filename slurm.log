@@ -1,0 +1,384 @@
+[H[2J[3Jrm -f plot_all *.o *.so *.pcm *.d *~
+g++ -g -Wall -oplot_all main.C TreeReader.C KGraph.C RecoTRG.C -pthread -std=c++20 -m64 -I/sfs/ceph/standard/phys56xx/miniforge3/envs/phys56xx/include -L/sfs/ceph/standard/phys56xx/miniforge3/envs/phys56xx/lib -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/sfs/ceph/standard/phys56xx/miniforge3/envs/phys56xx/lib -pthread -lm -ldl -rdynamic -L/sfs/ceph/standard/phys56xx/miniforge3/envs/phys56xx/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -Wl,-rpath,/sfs/ceph/standard/phys56xx/miniforge3/envs/phys56xx/lib -pthread -lm -ldl -rdynamic   -lgsl -lgslcblas
+main.C: In function 'void triggerAlign(TString, int)':
+main.C:63:10: warning: unused variable 'n' [-Wunused-variable]
+   63 |   UInt_t n = tree.num_entries();
+      |          ^
+main.C: In function 'void sum(int, int, bool)':
+main.C:164:11: warning: variable 'rise_g' set but not used [-Wunused-but-set-variable]
+  164 |   TGraph* rise_g;
+      |           ^~~~~~
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch0_event0 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch0_event1 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch0_event2 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch0_event3 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch0_event4 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch0_event5 has been generated
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+Info in <TH1F::SaveAs>: C++ Macro file: run_311/maxHist_ch0.csv has been generated
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+Info in <TGraph::SaveAs>: csv file: run_311/sum_avg_ch0.csv has been generated
+Info in <TGraph::SaveAs>: csv file: run_311/sum_max_ch0.csv has been generated
+run 311 channel 0 is finished
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch1_event0 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch1_event1 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch1_event2 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch1_event3 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch1_event4 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch1_event5 has been generated
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+Warning in <TROOT::Append>: Replacing existing TH1: maxHist (Potential memory leak).
+Info in <TH1F::SaveAs>: C++ Macro file: run_311/maxHist_ch1.csv has been generated
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+Info in <TGraph::SaveAs>: csv file: run_311/sum_avg_ch1.csv has been generated
+Info in <TGraph::SaveAs>: csv file: run_311/sum_max_ch1.csv has been generated
+run 311 channel 1 is finished
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch2_event0 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch2_event1 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch2_event2 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch2_event3 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch2_event4 has been generated
+Info in <TGraph::SaveAs>: C++ Macro file: run_311/firstSix_ch2_event5 has been generated
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+Warning in <TROOT::Append>: Replacing existing TH1: maxHist (Potential memory leak).
+Info in <TH1F::SaveAs>: C++ Macro file: run_311/maxHist_ch2.csv has been generated
+The following files were added to the TChain:
+DESY_DATA/run_311/outfile_LG.root
+******************************************************************************
+*Chain   :tree      : DESY_DATA/run_311/outfile_LG.root                      *
+******************************************************************************
+******************************************************************************
+*Tree    :tree      : DRS Data                                               *
+*Entries :    35729 : Total =      1757195529 bytes  File  Size = 1041368552 *
+*        :          : Tree compression factor =   1.69                       *
+******************************************************************************
+*Br    0 :horizontal_interval : horizontal_interval/F                        *
+*Entries :    35729 : Total  Size=     147517 bytes  File Size  =       4638 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=  31.56     *
+*............................................................................*
+*Br    1 :event     : event/I                                                *
+*Entries :    35729 : Total  Size=     146901 bytes  File Size  =      75642 *
+*Baskets :       40 : Basket Size=      50120 bytes  Compression=   1.93     *
+*............................................................................*
+*Br    2 :trigger_time : trigger_time/D                                      *
+*Entries :    35729 : Total  Size=     290529 bytes  File Size  =     161766 *
+*Baskets :       44 : Basket Size=      50120 bytes  Compression=   1.79     *
+*............................................................................*
+*Br    3 :channels  : channels[10][1024]/F                                   *
+*Entries :    35729 : Total  Size= 1463474807 bytes  File Size  =  945259003 *
+*Baskets :      154 : Basket Size=   25060290 bytes  Compression=   1.55     *
+*............................................................................*
+*Br    4 :trigger   : trigger[2][1024]/F                                     *
+*Entries :    35729 : Total  Size=  292697187 bytes  File Size  =   95853730 *
+*Baskets :       52 : Basket Size=   25060290 bytes  Compression=   3.05     *
+*............................................................................*
+*Br    5 :channel_digitized : channel_digitized[10]/B                        *
+*Entries :    35729 : Total  Size=     362429 bytes  File Size  =       5473 *
+*Baskets :       46 : Basket Size=      50120 bytes  Compression=  65.99     *
+*............................................................................*
+*Br    6 :trigger_digitized : trigger_digitized[2]/B                         *
+*Entries :    35729 : Total  Size=      75763 bytes  File Size  =       4253 *
+*Baskets :       38 : Basket Size=      50120 bytes  Compression=  17.55     *
+*............................................................................*
+cpp.sh: line 6: 487319 Killed                  ./plot_all
+finished
+slurmstepd: error: Detected 1 oom_kill event in StepId=61769502.batch. Some of the step tasks have been OOM Killed.

@@ -1,7 +1,8 @@
 #include "RecoTRG.h"
 #include "KGraph.h"
+#include <iostream>
 
-RecoTRG::RecoTRG(KGraph *gr) {
+RecoTRG::RecoTRG(KGraph *gr, int event) {
   int N = gr->TG()->GetN();
   double *X = gr->TG()->GetX();
   double *Y = gr->TG()->GetY();
@@ -14,11 +15,11 @@ RecoTRG::RecoTRG(KGraph *gr) {
   double amin = 1e+9;
   double amax = -1e+9;
   for (int i=0; i<N; i++) {
-    if (X[i] < 100.) { // Pedestal
+    if (Y[i] < -400.) { // Pedestal
       ped0 += 1.;
       ped1 += Y[i];
       ped2 += Y[i] * Y[i];
-    } else if (X[i] > 400.) { // Plateau
+    } else if (Y[i] > 0.) { // Plateau
       amp0 += 1.;
       amp1 += Y[i];
       amp2 += Y[i] * Y[i];
@@ -43,7 +44,6 @@ RecoTRG::RecoTRG(KGraph *gr) {
   for (int i=1; i<N; i++) {
     if (Y[i-1] <= threshold && Y[i] > threshold) {
       time_ = X[i-1] + (threshold - Y[i-1])/(Y[i] - Y[i-1]) * (X[i] - X[i-1]);
-      break;
     }
   }
 }

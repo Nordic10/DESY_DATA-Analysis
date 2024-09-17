@@ -92,14 +92,14 @@ void quick_plotter(TString filename, int event=0){
     g->SetLineColor(ch+1);
     mg->Add(g);
   }
-  mg->Draw("ac");
+  mg->Draw("al");
 
   canvas->cd(2);
   auto mgt = new TMultiGraph();
   mgt->SetTitle(TString::Format("Sample buffer trigger %d;Time [ns];Voltage [mV]", event));
   auto g = new TGraph(N_Samples, tree.time().data(), tree.trigger(0).data());
   mgt->Add(g);
-  mgt->Draw("ac");
+  mgt->Draw("al");
 }
 
 

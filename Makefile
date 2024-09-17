@@ -16,11 +16,15 @@ GSLFLAGS     = -lgsl -lgslcblas
 
 
 
-all: plot_all
+all: plot_all pe
 
 plot_all: main.C 
 	g++ -g -Wall -oplot_all main.C TreeReader.C KGraph.C RecoTRG.C $(ROOTFLAGS) $(GSLFLAGS)
 
+pe: pe_main.C
+	g++ -g -Wall -ope pe_main.C TreeReader.C KGraph.C RecoTRG.C $(ROOTFLAGS) $(GSLFLAGS)
+
 clean:
+	rm -f pe *.o *.so *.pcm *.d *~
 	rm -f plot_all *.o *.so *.pcm *.d *~
 
